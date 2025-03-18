@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Discreet Women Near You 🔥</title>
+    <style>
+        body {
+            background-image: url('https://hotphoto.info/out.php/i2500929_f773202e.jpg'); /* Substitua pela sua imagem */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 30px;
+            max-width: 400px;
+            margin: 100px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.8);
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            color: #ff0055;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .cta-btn {
+            background: linear-gradient(45deg, #ff0055, #ff6600);
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            width: 100%;
+            text-decoration: none;
+            display: block;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0px 5px 15px rgba(255, 0, 0, 0.8);
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: linear-gradient(45deg, #ff6600, #ff0055);
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚨 Discreet Women Want to Meet You! 🚨</h1>
+        <p>🔥 Married and single women are looking for exciting, no-strings-attached encounters. Are you ready?</p>
+        <a class="cta-btn" id="cta-button" href="#">🔞 Enter Now 🔥</a>
+    </div>
+
+    <script>
+        async function redirectUser() {
+            try {
+                let response = await fetch('https://ipinfo.io/json?token=5e541055300044');
+                let data = await response.json();
+                let country = data.country; 
+
+                let offerUSA = "https://t.slext2.com/212319/8517/0"; 
+                let smartlink = "https://bgjaaea.bustyaffar.com/s/63e51ba18796a"; 
+
+                let button = document.getElementById("cta-button");
+
+                if (country === "US") {
+                    button.href = offerUSA;
+                } else {
+                    button.href = smartlink;
+                }
+            } catch (error) {
+                console.error("Erro ao obter localização:", error);
+                document.getElementById("cta-button").href = "URL_DO_SMARTLINK_GLOBAL";
+            }
+        }
+
+        window.onload = redirectUser;
+    </script>
+
+</body>
+</html>
